@@ -38,21 +38,20 @@
 {%- endif %}
 }</code></pre></details><span class="publication-authors">
     {%- for author in tags.author | split(pat=" and ") -%}
-        {%- if author == "others" %} <i>et al.</i>
-            {%- break -%}
-        {%- endif -%}
-        {%- if not loop.first -%}
-            {%- if loop.last %} &amp; {% else -%} , {% endif -%}
-        {%- endif -%}
-        {%- set name = author | split(pat=",") -%}
-        {%- set initial = name.1 | default(value="") | truncate(length=2, end="") -%}
-        {%- set author_str = name.0 ~ "," ~ initial ~ "." | trim %}
-        {%- if author == config.extra.publication.author -%}
-            {%- set author_class = "highlighted-author" -%}
+        {%- if author == "others" -%}
+            {%- if loop.last -%}<i>et al.</i> {% else -%}&hellip; {% endif -%}
         {%- else -%}
-            {%- set author_class = "author" -%}
+            {%- set name = author | split(pat=",") -%}
+            {%- set initial = name.1 | default(value="") | truncate(length=2, end="") -%}
+            {%- set author_str = name.0 ~ "," ~ initial ~ "." | trim %}
+            {%- if author == config.extra.publication.author -%}
+                {%- set author_class = "highlighted-author" -%}
+            {%- else -%}
+                {%- set author_class = "author" -%}
+            {%- endif -%}
+            <span class="{{ author_class }}">{{ author_str }}</span>
+            {%- if not loop.last %} , {% endif -%}
         {%- endif -%}
-        <span class="{{ author_class }}">{{ author_str }}</span>
     {%- endfor -%}
     </span><br>
     {%- if entry.entry_type == "inproceedings" -%}
