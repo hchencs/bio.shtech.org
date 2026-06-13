@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <!-- Avatar section -->
+            {% if config.extra.avatar %}
+            <div class="avatar-section">
+                <img src="{{ config.extra.avatar }}" alt="{{ config.extra.name }}" class="avatar">
+            </div>
+            {% endif %}
+
+            <!-- Bio section -->
+            <div class="bio-section">
+                <!-- Display either banner or name
+                {% if config.extra.banner %}
+                <img src="{{ config.extra.banner | safe }}" alt="{{ config.extra.banner_name }}" class="banner">
+                {% elif config.extra.name %}
+                <h1 class="name">{{ config.extra.name }}</h1>
+                {% endif %}
+                -->
+                {% if config.extra.role %}
+                <h2 class="role">{{ config.extra.role }}</h2>
+                {% endif %}
+                {% if config.extra.organization %}
+                <p class="organization">{{ config.extra.organization }}</p>
+                {% endif %}
+                {% if config.extra.membership %}
+                <p class="membership">{{ config.extra.membership }}</p>
+                {% endif %}
+                {% if config.extra.address %}
+                <p class="address"><i class="fas fa-envelope"></i> {{ config.extra.address }}</p>
+                {% endif %}
+                
+                <div class="bio">
+                    <!-- <h3>About Me</h3>  -->
+                    <div>{{ section.content | safe }}</div>
+                </div>
+
+                <!-- Download CV button -->
+                {% if config.extra.cv %}
+                <div class="cv-download">
+                    <a href="{{ config.extra.cv }}" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+                {% endif %}
+
+                <!-- Social links and Info sections horizontally aligned -->
+                <div class="social-info-section">
+                    <!-- Social links -->
+                    {% if config.extra.social %}
+                    <div class="social-links">
+                        {% for social in config.extra.social %}
+                        <a href="{{ social.url }}" target="_blank" aria-label="{{ social.name }}">
+                            <i class="{{ social.icon }}"></i>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,73 @@
+# <customize>
+# The URL the site will be built for
+base_url = "https://hchencs.github.io/ab"
+title = "HKU/CAS joint lab of AI for biology"
+description = "We apply AI to molecular & cell biology and translational medicine research"
+# </customize>
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Theme
+theme = "peritus"
+
+[extra]
+# Features to enable
+enable_dark_mode = true
+enable_search = false
+
+# <customize>
+# Either home_icon or home_text must be set.
+home_icon = "/img/logo.svg"
+# home_text = "JC STEM Lab of Intelligent Cybersecurity"
+
+# role = "Professor"
+# organization = ""
+#membership = "IEEE fellow; ACM distinguished member"
+# address = "hchencs AT gmail.com"
+# cv = "pdf/cv.pdf"
+
+[extra.publication]
+prefix = "https://hchencs.github.io/ab"
+# If author isn't empty, then highlight him/her in the author list.
+author = ""
+
+[[extra.menu]]
+name = "Research"
+url = "/research/"
+weight = 1
+
+[[extra.menu]]
+name = "Publications"
+url = "/publications/"
+weight = 2
+
+[[extra.menu]]
+name = "People"
+url = "/people/"
+weight = 3
+
+[[extra.menu]]
+name = "Resources"
+url = "/resources/"
+weight = 4
+
+# </customize>
+
+# Color theme configuration
+[extra.colors]
+# Light mode colors
+primary_color = "#003660"
+secondary_color = "#FEBC11"
+accent_color = "#09847A"
+text_color = "#3D4952"
+background_color = "#ffffff"
+card_background = "#ffffff"
+border_color = "#DCE1E5"
+light_background = "#EEF0F2"
+
+# Dark mode colors
+dark_text_color = "#DCE1E5"
+dark_background_color = "#111517"
+dark_card_background = "#1e1e1e"
+dark_border_color = "#333333"
