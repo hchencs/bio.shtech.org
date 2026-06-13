@@ -7,5 +7,6 @@ page_template = "page.html"
 ## Computing
 - Nvidia H200 cluster
 - Nvidia H100 cluster
+- Other GPU and CPU servers, and mass storage.
 
-## Web lab
+## Wet lab
