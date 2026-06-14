@@ -1,8 +1,8 @@
 # <customize>
 # The URL the site will be built for
-base_url = "https://bio.gradebot.org"
+base_url = "https://bio.shtech.org"
 title = "HKU/CAS joint Lab of AI for Biology"
-description = "We apply AI to basic and translational medicine research"
+description = "Applying AI to basic and translational medical research"
 # </customize>
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -19,7 +19,7 @@ enable_search = false
 # <customize>
 # Either home_icon or home_text must be set.
 home_icon = "/img/logo.svg"
-# home_text = "JC STEM Lab of Intelligent Cybersecurity"
+home_text = "HKU/CAS joint Lab of AI for Biology"
 
 # role = "Professor"
 # organization = ""
