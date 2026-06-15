@@ -32,6 +32,12 @@ home_text = "HKU/CAS joint Lab of AI for Biology"
 # If author isn't empty, then highlight him/her in the author list.
 author = ""
 
+[extra.publication.title]
+# If a title is the empty string, then the section won't be printed.
+article = "Peer-reviewed articles"
+inbook = ""
+preprint = ""
+
 [[extra.menu]]
 name = "Research"
 url = "/research/"
