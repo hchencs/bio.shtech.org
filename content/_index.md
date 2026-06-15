@@ -7,4 +7,4 @@ The lab has state-of-the-art wet lab and computing facilities, including Nvidia 
 
 ## PhD and postdoc recruitment
 
-We have multiple [PhD and postdoc positions](https://docs.qq.com/form/page/DU2NTZHhTUEpybFRV) in both Hong Kong and Shanghai.
+We have multiple [PhD and postdoc positions](https://bcng518bc2ky.feishu.cn/share/base/form/shrcnDKe3nDSOXeEK5RIj6sDRqY) in both Hong Kong and Shanghai.
