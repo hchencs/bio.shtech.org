@@ -17,10 +17,11 @@
   --hover-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-// Reset and base styles
+/*
 * {
   margin: 0;
 }
+*/
 
 html {
   scroll-behavior: smooth;
@@ -35,19 +36,7 @@ body {
 }
 
 // Typography
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  // font-family: var(--heading-font);
-  line-height: 2;
-}
-
 p {
-    margin-bottom: 1rem;
     color: var(--text-color);
 }
 
@@ -231,13 +220,6 @@ summary {
     font-size: 1.2rem;
     // color: var(--secondary-color);
     margin-bottom: 0rem;
-  }
-
-  .bio {
-      ul, ol {
-          margin-bottom: 1rem;
-          padding-left: 2rem;
-      }
   }
 }
 
