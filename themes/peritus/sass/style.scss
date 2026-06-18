@@ -48,7 +48,7 @@ h6 {
 
 p {
     margin-bottom: 1rem;
-    // color: var(--text-color);
+    color: var(--text-color);
 }
 
 a {
@@ -95,12 +95,6 @@ summary {
   justify-content: space-between;
   align-items: center;
   height: 90px;
-}
-
-.nav-brand a {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-color);
 }
 
 .nav-menu {
@@ -330,13 +324,6 @@ summary {
 
 .footer-content {
   text-align: center;
-  /*
-  color: var(--secondary-color);
-
-  a {
-    color: var(--primary-color);
-  }
-  */
 }
 
 // Section templates
