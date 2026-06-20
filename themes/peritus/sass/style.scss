@@ -79,7 +79,7 @@ summary {
 .nav-container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,11 +147,6 @@ summary {
 }
 
 // Hero section
-.hero-section {
-  padding: 2rem 0;
-  background-color: var(--background-color);
-}
-
 .hero-content {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -320,10 +315,7 @@ summary {
 // Responsive design
 @media (max-width: 768px) {
   .container {
-    padding: 0 1rem;
-  }
-
-  .hero-section {
-    padding: 2rem 0;
+    padding: 0;
+    font-size: 1.2em;
   }
 }
