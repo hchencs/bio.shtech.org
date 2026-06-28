@@ -5,6 +5,6 @@ The [HKU](https://hku.hk/) and [CAS](http://english.cemcs.cas.cn) joint Lab of A
 
 The lab has state-of-the-art wet lab and computing facilities, including Nvidia H200 and H100 GPU clusters and abundant cloud computing resources.
 
-## PhD and postdoc recruitment
+## Open positions
 
-We have multiple [PhD and postdoc positions](https://bcng518bc2ky.feishu.cn/share/base/form/shrcnDKe3nDSOXeEK5RIj6sDRqY) in both Hong Kong and Shanghai.
+We have multiple postdoc and PhD [positions](jobs).

@@ -33,6 +33,7 @@ body {
   background-color: var(--background-color);
   line-height: 1.5;
   transition: all 0.3s ease;
+  margin: 0;
 }
 
 // Typography
@@ -59,7 +60,7 @@ summary {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .main-content {
